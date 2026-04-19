@@ -1,0 +1,22 @@
+type Props = {
+  href: string;
+  children: React.ReactNode;
+  className?: string;
+};
+
+export default function ExternalLink({
+  href,
+  children,
+  className = "",
+}: Props) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`cursor-pointer ${className}`}
+    >
+      {children}
+    </a>
+  );
+}
