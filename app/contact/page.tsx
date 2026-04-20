@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { SendHorizontal, Loader2 } from "lucide-react";
-import axios from "axios";
 import { api } from "@/lib/axios";
 import toast from "react-hot-toast";
 
@@ -24,7 +23,7 @@ export default function Contact() {
     try {
       setLoading(true);
 
-      await api.post("/api/contact", { name, email, message });
+      await api.post("/contact", { name, email, message });
 
       toast.success("Message sent successfully 🚀");
 
@@ -146,7 +145,7 @@ export default function Contact() {
               type="submit"
               disabled={loading}
               className="
-                w-full h-[44px] rounded-md flex items-center justify-center gap-2 text-sm font-medium
+                cursor-pointer w-full h-[44px] rounded-md flex items-center justify-center gap-2 text-sm font-medium
 
                 bg-black text-white hover:bg-gray-800
 
