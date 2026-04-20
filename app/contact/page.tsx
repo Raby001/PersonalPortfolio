@@ -24,7 +24,7 @@ export default function Contact() {
     try {
       setLoading(true);
 
-      await api.post("/contact", { name, email, message });
+      await api.post("/api/contact", { name, email, message });
 
       toast.success("Message sent successfully 🚀");
 
