@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const images = [
+  "/others/profile6.jpg",
   "/others/profile2.jpg",
   "/others/profile3.jpg",
   "/others/profile4.jpg",
