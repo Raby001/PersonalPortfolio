@@ -29,16 +29,16 @@ export default function Hero() {
         <div className="mt-10 flex md:flex-row items-center justify-start flex-col gap-[30px]">
 
           {/* Resume */}
-          <ExternalLink
-            href="https://drive.google.com/file/d/1iUv6ZCv0PsKjnkXrgbXI1Qukfvu6D-g1/view?usp=sharing"
+          <a
+            href="/HAN-Raby-Resume.pdf"
+            download
             className="hover:scale-110 hover:text-indigo-500 dark:hover:text-amber-300 transition"
           >
-            <div className="flex flex-row items-center gap-2 border-2 px-8 py-2  rounded-[6px] ">
+            <div className="flex flex-row items-center gap-2 border-2 px-8 py-2 rounded-[6px]">
               <span className="font-medium">Resume / CV</span>
               <FaFile />
             </div>
-
-          </ExternalLink>
+          </a>
 
           <div className="flex space-x-3 sm:space-x-5 text-[18px]">
 

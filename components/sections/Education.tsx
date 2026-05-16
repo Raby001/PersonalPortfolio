@@ -13,7 +13,7 @@ export default function Education() {
         title="Institute of Technology of Cambodia (ITC)"
         degree="Bachelor's Degree in GIC"
         details={[
-          "1 month volunteer teaching juniors",
+          "Volunteered in teaching junior students C++ programming and database fundamentals.",
           "Maintain 3.5 GPA for 3 years",
         ]}
       >
@@ -29,7 +29,7 @@ export default function Education() {
         degree="Bachelor's Degree in English for Communication (EC)"
         details={[
           "Research: Impact of Social Media on Students",
-          "Maintain <3 GPA for 3 years",
+          "Maintain 3.5 GPA for 4 years",
         ]}
       >
       </EducationItem>
