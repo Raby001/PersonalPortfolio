@@ -19,7 +19,7 @@ export default function Hero() {
         </p>
 
         <p className="mt-6 font-semibold">
-          Computer Science Student | Aspiring Full Stack Developer
+          Software Engineer Student
         </p>
 
         <p className="mt-4 text-sm">
@@ -30,7 +30,7 @@ export default function Hero() {
 
           {/* Resume */}
           <a
-            href="/HAN-Raby-Resume.pdf"
+            href="/HanRaby_CV.pdf"
             download
             className="hover:scale-110 hover:text-indigo-500 dark:hover:text-amber-300 transition"
           >

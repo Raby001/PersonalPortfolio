@@ -14,7 +14,7 @@ export default function Education() {
         degree="Bachelor's Degree in GIC"
         details={[
           "Volunteered in teaching junior students C++ programming and database fundamentals.",
-          "Maintain 3.5 GPA for 3 years",
+          "Maintain 3.5 GPA for 4 years",
         ]}
       >
       </EducationItem>
