@@ -19,6 +19,7 @@ export const projects = [
     ],
     youtube: "https://youtu.be/1dkfUakeprE?si=35N-CY_fUYtiVi3N",
     github: "https://github.com/DogStore",
+    website: "https://tradetree.netlify.app/",
     featured: true,
   },
 
@@ -41,6 +42,7 @@ export const projects = [
       "Tailwind CSS",
     ],
     github: "https://github.com/IP2-Project",
+    website: "https://jomnus.gic26.tech/",
     featured: true,
   },
 
@@ -73,8 +75,7 @@ export const projects = [
       "A modern developer portfolio built with performance, clean UI, dark mode, and reusable component architecture in mind.",
     image: "/projects/new-portfolio.png",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    website: "",
-    github: "",
+    website: "https://www.hanraby.com/",
     featured: false,
   },
 
