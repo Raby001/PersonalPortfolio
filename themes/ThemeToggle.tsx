@@ -1,6 +1,5 @@
 "use client"
 
-import { MoonStar, Sun } from "lucide-react"
 import { useEffect, useState } from "react"
 import { FaMoon, FaSun } from "react-icons/fa";
 

@@ -1,3 +1,4 @@
+import ChatBotToggle from "@/components/ai/ChatBotToggle";
 import LinkStyle from "@/components/ui/InternalLink"
 import ThemeToggle from "@/themes/ThemeToggle"
 
@@ -18,8 +19,13 @@ export default function Navbar() {
             <LinkStyle href="/contact">Contact</LinkStyle>
           </div>
 
-          {/* Theme */}
-          <ThemeToggle />
+          <div className="flex items-center gap-4">
+
+              <ChatBotToggle />
+
+              <ThemeToggle />
+
+          </div>
 
         </div>
       </div>

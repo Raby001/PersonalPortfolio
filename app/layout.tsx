@@ -3,6 +3,8 @@ import "./globals.css"
 import Navbar from "@/layout/Navbar";
 import { Signika_Negative } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import { ChatBotProvider } from "@/components/context/ChatBotContext";
+import ChatBot from "@/components/ai/ChatBot";
 
 
 const signika = Signika_Negative({
@@ -20,24 +22,29 @@ export default function RootLayout({children}:{children: React.ReactNode;}){
         min-h-screen flex flex-col
         `}
       >
-        <Navbar />
+        <ChatBotProvider>
+          <Navbar />
 
-        <main className="flex-1 w-full max-w-[700px] mx-auto px-[20px] md:px-0 pt-[100px]">
-          {children}
-        </main>
+          <main className="flex-1 w-full max-w-[700px] mx-auto px-[20px] md:px-0 pt-[100px]">
+            {children}
+          </main>
 
-        <Toaster
-          position="top-center"
-          toastOptions={{
-            style: {
-              background: "#0f172a",
-              color: "#fff",
-              border: "1px solid #1e293b",
-            },
-          }}
-        />
+          <ChatBot/>
 
-        <Footer />
+          <Toaster
+            position="top-center"
+            toastOptions={{
+              style: {
+                background: "#0f172a",
+                color: "#fff",
+                border: "1px solid #1e293b",
+              },
+            }}
+          />
+
+          <Footer />          
+        </ChatBotProvider>
+
       </body>
   </html>
 }
