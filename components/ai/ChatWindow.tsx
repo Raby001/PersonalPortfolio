@@ -102,7 +102,7 @@ export default function ChatWindow() {
           id: Date.now() + 1,
           role: "assistant",
           content:
-            "Sorry, I could not reach the chat API right now. Please try again.",
+            "Sorry, the free tier of gemini are all depleted. Please wait until owner pay it first.",
         },
       ]);
     } finally {
