@@ -1,19 +1,13 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+import { api } from "./axios";
 
-export async function chat(message: string) {
-  const response = await fetch(`${API_URL}/ai/chat`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      message,
-    }),
+type ChatResponse = {
+  response: string;
+};
+
+export async function chat(message: string): Promise<ChatResponse> {
+  const { data } = await api.post<ChatResponse>("/ai/chat", {
+    message,
   });
 
-  if (!response.ok) {
-    throw new Error("Failed to chat with AI");
-  }
-
-  return response.json();
+  return data;
 }

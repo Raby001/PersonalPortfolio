@@ -24,7 +24,7 @@ type Props = {
 export function ChatBotProvider({
   children,
 }: Props) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const toggle = () => {
     setOpen((prev) => !prev);
